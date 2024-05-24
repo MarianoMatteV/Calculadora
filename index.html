@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Criei uma section para fazer a calculadora -->
+
+    <div class="calculadora">
+
+<!-- Criei uma div para o display, parte que aparece o resultado das operações. -->
+        <div class="resultado">0</div>
+        
+<!-- Criei essa div para incorporar todos os botões da calculadora. -->
+        <div class="botoes">
+            <button class="botao botao_funcao"onclick="apagar()">C</button>
+            <button class="botao botao_funcao" onclick="apertar('/')">÷</button>
+            <button class="botao botao_funcao" onclick="apertar('*')">x</button>
+            <button class="botao botao_laranja" onclick="apertar('-')">-</button>
+            <button class="botao" onclick="apertar('7')">7</button>
+            <button class="botao" onclick="apertar('8')">8</button>
+            <button class="botao" onclick="apertar('9')">9</button>
+            <button class="botao botao_laranja" onclick="apertar('+')">+</button>
+            <button class="botao" onclick="apertar('4')">4</button>
+            <button class="botao" onclick="apertar('5')">5</button>
+            <button class="botao" onclick="apertar('6')">6</button>
+            <button class="botao botao_laranja" id="botaoIgual" onclick="resultFinal()">=</button>
+            <button class="botao" onclick="apertar('1')">1</button>
+            <button class="botao" onclick="apertar('2')">2</button>
+            <button class="botao" onclick="apertar('3')">3</button>
+            <button class="botao" id="botaoZero" onclick="apertar('0')">0</button>
+            <button class="botao" onclick="apertar('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

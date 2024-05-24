@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Na chave do body deixei tudo centralizado, coloquei para ele ocupar a altura máxima e tirei a borda. */
+
+/* CORPO DO SITE! */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utilizei o border-radius para deixar a borda da calculadora mais circular, usei o box shadow para ter uma sombra e aumentei a largura da calculadora. */
+
+/* CORPO DA CALCULADORA! */
+
+.calculadora{
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+/* No "resultado" (ou display) deixei um fundo preto, a fonte deixei com cor branca, aumentei o tamanho da fonte, criei um espaçamento, alinhei os números para a direita e criei uma pequena borda na parte inferiora do display. */
+
+/* DISPLAY! */
+
+.resultado{
+    background-color: #000;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 2rem;
+    text-align: right;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid #444;
+}
+
+/* Criei um espaçamento entre os botões e as bordas, coloquei 4 botões em cada fileira horizontal, tendo um espaçamento de 10px entre cada botão. */
+
+/* BOTÕES! */
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+
+/* Os botões:hover servem para esclarecer ou escurecer o botão quando passa o mouse em cima. */
+
+.botao:hover{
+    background-color: #707070;
+}
+
+/* Adicionei um cor ao fundo de cada botão, tirei as bordas, diminui o tamanho da fonte e deixei os botões redondos. */
+
+.botao{
+    background-color: #505050;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.botao_funcao:hover{
+    background-color: #6b6b6b;
+}
+
+.botao_funcao{
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.botao_laranja:hover{
+    background-color: #c47404;
+}
+
+.botao_laranja{
+    background-color: #ff9500;
+}
+
+/* Utilizei o grid-row e o span para juntar o espaço do igual na vertical e deixá-lo maior. */
+
+#botaoIgual{
+    grid-row: span 3;
+}
+
+/* Utilizei o grid-column e o span para juntar o espaço do zero na horizontal e deixá-lo mais largo. */
+
+#botaoZero{
+    grid-column: span 2;
+}
